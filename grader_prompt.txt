@@ -1,0 +1,49 @@
+Programming question
+<question>
+{instruction}
+</question>
+
+<starter> 
+
+{starter}
+
+</starter> 
+
+<StandardAnswer>
+
+
+{answer}
+
+</StandardAnswer>
+
+<StudentAnswer>
+
+{student_answer}
+
+</StudentAnswer>
+
+Number of times code commit to GitHub: {student_commit}
+
+Student add the code statement from starter code.
+Student follows the question to add more code statements.
+
+Rubric:
+- If the StudentAnswer is the same as the starter code, give 0 scores and comment “Not attempted”. Skip all other rules.
+- The maximum score of this question is {mark}.
+- Compare the StudentAnswer and StandardAnswer line by line and Programming logic. Give 1 score for each line of correct code.
+- Ignore code statements provided by the starter.
+- Evaluate both StandardAnswer and StudentAnswer for input, print, and main function line by line.
+- Explain your score calculation.
+- If you are unsure, don’t give a score!
+- Confident is from 1 to 10, and a higher value means you are very sure your score is correct.
+- Give comments to the student.
+
+The output should be in the following JSON format:
+"""
+{{
+    "score" : "...",
+    "confident: "...",
+    "comments" : "...",
+    "calculation" : "..."
+}}
+"""

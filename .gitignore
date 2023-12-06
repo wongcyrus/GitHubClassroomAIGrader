@@ -159,3 +159,4 @@ venv.bak/
 *_ans.py
 
 data/*
+.env
