@@ -8,7 +8,7 @@
 		"vscode": {
 			// Set *default* container specific settings.json values on container create.
 			"settings": {
-				"python.defaultInterpreterPath": "/usr/local/python",			
+				"python.defaultInterpreterPath": "/usr/local/python/current/bin/python",			
 				"pylint.enabled": true,
 				"pylint.path": ["/usr/local/py-utils/bin/pylint"],
 				"flake8.enabled": true,
@@ -27,7 +27,8 @@
 			"extensions": [				
 				"ms-python.autopep8",
 				"ms-python.pylint",
-				"emeraldwalk.runonsave"
+				"github.copilot-chat",
+				"github.copilot"
 			]
 		}
 	},
