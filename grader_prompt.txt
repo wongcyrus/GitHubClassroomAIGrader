@@ -1,0 +1,47 @@
+Programming question
+<question>
+{instruction}
+</question>
+
+<Starter> 
+
+{starter}
+
+</Starter> 
+
+<StandardAnswer>
+
+
+{answer}
+
+</StandardAnswer>
+
+<StudentAnswer>
+
+{student_answer}
+
+</StudentAnswer>
+
+Number of times code commit to GitHub: {student_commit}
+
+Student add the code statement from Starter.
+Student follows the question to add more code statements.
+
+Rubric:
+- If the content of StudentAnswer is nearly the same as the content of Starter, score is 0 and comment “Not attempted”. Skip all other rules.
+- The maximum score of this question is {mark}.
+- Compare the StudentAnswer and StandardAnswer line by line and Programming logic. Give 1 score for each line of correct code.
+- Don't give score to Code statements provided by the Starter.
+- Evaluate both StandardAnswer and StudentAnswer for input, print, and main function line by line.
+- Explain your score calculation.
+- If you are unsure, don’t give a score!
+- Give comments to the student.
+
+The output must be in the following JSON format:
+"""
+{{
+    "score" : "...",   
+    "comments" : "...",
+    "calculation" : "..."
+}}
+"""
